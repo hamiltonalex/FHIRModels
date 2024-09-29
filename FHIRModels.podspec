@@ -12,38 +12,38 @@ Pod::Spec.new do |s|
   s.swift_version             = '5.0'
   s.requires_arc              = true
 
-  s.default_subspec = 'Core'
+  s.default_subspec = 'FMCore'
 
-  s.subspec 'Core' do |ss|
+  s.subspec 'FMCore' do |ss|
     ss.source_files = 'Sources/FMCore/**/*.swift'
   end
 
-  s.subspec 'DSTU2' do |ss|
+  s.subspec 'ModelsDSTU2' do |ss|
     ss.source_files = 'Sources/ModelsDSTU2/**/*.swift'
     ss.dependency 'FHIRModels/Core'
   end
 
-  s.subspec 'STU3' do |ss|
+  s.subspec 'ModelsSTU3' do |ss|
     ss.source_files = 'Sources/ModelsSTU3/**/*.swift'
     ss.dependency 'FHIRModels/Core'
   end
 
-  s.subspec 'R4' do |ss|
+  s.subspec 'ModelsR4' do |ss|
     ss.source_files = 'Sources/ModelsR4/**/*.swift'
     ss.dependency 'FHIRModels/Core'
   end
 
-  s.subspec 'R4B' do |ss|
+  s.subspec 'ModelsR4B' do |ss|
     ss.source_files = 'Sources/ModelsR4B/**/*.swift'
     ss.dependency 'FHIRModels/Core'
   end
 
-  s.subspec 'R5' do |ss|
+  s.subspec 'ModelsR5' do |ss|
     ss.source_files = 'Sources/ModelsR5/**/*.swift'
     ss.dependency 'FHIRModels/Core'
   end
 
-  s.subspec 'Build' do |ss|
+  s.subspec 'ModelsBuild' do |ss|
     ss.source_files = 'Sources/ModelsBuild/**/*.swift'
     ss.dependency 'FHIRModels/Core'
   end
